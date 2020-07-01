@@ -29,6 +29,7 @@
               "src/manifest.webmanifest"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.less"
             ],
             "scripts": []
@@ -127,6 +128,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "tourney-gg"
 }
