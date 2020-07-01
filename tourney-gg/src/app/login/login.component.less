@@ -5,7 +5,7 @@
         img{width: 100%; height: auto;}
     }
     #welcome {display: flex; flex-direction: column; justify-content: center; flex-basis: 65%; flex: 1.5; background: url("../../assets/images/cod.jpg"); background-position: center center; background-size: cover; background-repeat: no-repeat; color: var(--white); padding: 40px 80px; text-align: left; position: relative;
-        &:after{content: ''; width: 100%; height: 100%; background: linear-gradient(145deg, @med-grey, @dark-grey); backdrop-filter: saturate(0%) grayscale(100%) contrast(20%); mix-blend-mode: multiply; position: absolute; top: 0; left: 0; z-index: 1;}
+        &:after{content: ''; width: 100%; height: 100%; background: linear-gradient(145deg, #2c3c52, #090f1b); backdrop-filter: saturate(0%) grayscale(100%) contrast(20%); mix-blend-mode: multiply; position: absolute; top: 0; left: 0; z-index: 1;}
         h1, p{position: relative; z-index: 3;}
         h1{font-size: clamp(36px, 4vw, 54px); font-weight: 700; letter-spacing: 2px; line-height: 1.4; padding-bottom: 20px;}
         p{font-size: clamp(18px, 2.5vw, 26px); line-height: 1.6; width: clamp(200px, 100%, 750px);
@@ -36,6 +36,7 @@
 
 @media screen and (max-width: 1250px){
     .login-container{flex-direction: column; justify-content: flex-start; align-items: center;
+        #small-logo{display: none;}
         #welcome{display: none;}
 
         #login-form-container{flex-basis: auto; width: 100%; }
