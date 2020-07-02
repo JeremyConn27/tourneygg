@@ -4,6 +4,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 a{text-decoration: none;
     &:visited{color: #000;}
 }
+
+::-webkit-scrollbar{width: 8px;}
+::-webkit-scrollbar-track{background: @black;}
+::-webkit-scrollbar-thumb{background: linear-gradient(180deg, @med-grey 25%, @dark-grey); border-radius: 6px;}
+
 @white: #fff;
 @med-grey: #252A31;
 @dark-grey: #1A1F23;

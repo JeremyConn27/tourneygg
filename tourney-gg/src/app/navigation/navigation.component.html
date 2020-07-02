@@ -1,1 +1,43 @@
-<p>navigation works!</p>
+<nav>
+    <div class="org-logo">
+      <img src="../../assets/images/logo.png" alt="FinalZone" />
+      <a class="nav-menu-icon" (click)="toggleSideNav()">
+        <span class="material-icons"> close </span>
+      </a>
+    </div>
+    <ul>
+      <li *ngFor="let navItem of navItems">
+        <a matRipple [routerLink]="navItem.routerLink" routerLinkActive="nav-active">
+          <!--<svg viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <use [attr.xlink:href]="navItem.iconPath"></use>
+          </svg>-->
+          <img class="nav-item-icon" [attr.src]="navItem.iconPath" />
+          <span class="label">{{ navItem.label }}</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="sociti-logo">
+      <img src="../../assets/images/logo.png" alt="FinalZone" />
+    </div>
+</nav>
+
+<header>
+    <a class="nav-menu-icon" (click)="toggleSideNav()">
+      <span class="material-icons"> menu </span>
+    </a>
+    <div class="search-container">
+      <span class="material-icons"> search </span>
+      <mat-form-field>
+        <input matInput type="search" />
+      </mat-form-field>
+    </div>
+    <div class="user-container">
+      <span class="user-name">
+        Jeremy Conn
+      </span>
+      <div class="user-profile-pic">
+        <img src="../../assets/images/profile-pic-sample.jpg" alt="user" />
+      </div>
+    </div>
+ </header>
